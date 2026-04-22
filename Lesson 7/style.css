@@ -1,0 +1,220 @@
+
+header {
+    padding: 20px;
+    text-align: center;
+    contain: content;
+    z-index: 1;
+    background-size: cover;
+    background-color: rgba(250, 239, 239, 0.6);
+    Border: 2px solid #ff6600;
+}
+
+main {
+    height: auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0; 
+    align-items: center;
+    text-align: center;
+    height : 100vh;
+    background-image: url('background.png');
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px); 
+    transition: backdrop-filter 0.5s ease;
+}
+
+
+h2 {
+    margin-top: 30px;
+    font-size: 50px;
+    color: #0c0c0c;
+    font-family: 'Bungee Spice', cursive;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    contain: content;
+    z-index: 1;
+    background-size: cover;
+    background-color: bisque;
+    Border: 2px solid #ff6600;
+}
+
+#spacing {
+    height: 600px;
+}
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+    z-index: 1;
+    background-color: rgba(250, 239, 239, 0.6);
+    min-height: 500px;
+    height: auto;
+}
+
+.directions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+    z-index: 1;
+    background-color: rgba(250, 239, 239, 0.6);
+    height: 500px;
+}
+
+
+#pizza1, #pizza2, #pizza3 {
+    color: white;
+    transition-property: linear;
+    width: 300px;
+    height: 300px;
+    z-index: 2;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#map {
+    color: white;
+    transition-property: linear;
+    width: 300px;
+    height: 300px;
+    z-index: 2;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#pizza1 {
+    background-image: url("2stroke.jpeg");
+    background-size: cover;
+    
+    
+}
+
+#pizza2 {
+    background-image: url("yamaha.jpeg");
+    background-size: cover;
+  
+    
+}
+
+#pizza3 {
+    background-image: url("honda.jpeg");
+    background-size: cover;    
+    
+}
+
+#map {
+    background-image: url("map.jpg");
+    background-size: cover;    
+}
+
+#pizza1:active{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(2.5);
+    z-index: 3;
+}
+
+
+
+#pizza2:active{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(2.5);
+    z-index: 3;
+}
+
+#pizza3:active{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(2.5);
+    z-index: 3;
+}
+
+
+
+
+
+@media all and (max-width: 430px) {
+     .items {
+        display: none; 
+    }
+
+
+    footer {
+        display: none; 
+    }
+
+    #show {
+        display: none; 
+    }
+
+    .directions {
+        display: flex; 
+    }
+}
+
+@media all and (min-width: 430px) {
+     .items {
+        display: flex; 
+    }
+
+    footer {
+        display: block; 
+    }
+
+    #contact {
+        display: hidden; 
+    }
+
+    #show {
+        display: none; 
+    }
+
+    .directions {
+        display: none; 
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .items {
+        display: flex;     
+    }
+
+    #contact    {
+        display: block; 
+    }
+
+    #show {
+        display: block; 
+    }
+
+    footer {
+        display: block; 
+    }
+    
+    .directions {
+        display: none; 
+    }
+}
+
+
+
+
+
+
