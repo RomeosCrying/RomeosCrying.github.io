@@ -1,0 +1,19 @@
+#imgSize  {
+    width: 1200px;
+    height: 400px;
+    display: flex;
+  
+}
+
+h5 {
+    font-size: 45px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+
+p {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+
